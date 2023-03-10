@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh if...else</title>
+</head>
+
+<body>
+    <script>
+        // Nhập vào một số từ bàn phím, kiểm tra số đó có phải là số chẵn hay số lẻ
+        let number = parseInt(prompt("Nhập vào một số nguyên"));
+        if (number % 2 == 0) {//number = 9 --> number%2==0--> false
+            // condition: true --> block if, condition: false --> không thực hiện
+            console.log("Số nguyên vừa nhập là số chẵn");
+        } else {// number%2!=0--> true
+            console.log("Số nguyên vừa nhập là số lẻ");
+        }
+        //In ra số dư của số nguyên khi chia cho 3
+        if (number % 3 == 0) {
+            console.log("Số nguyên chia hết cho 3");
+        } else if (number % 3 == 1) {
+            console.log("Số nguyên chia 3 dư 1");
+        } else {
+            console.log("Số nguyên chia 3 dư 2");
+        }
+        // In ra số dư của số nguyên khi chia cho 4
+        if (number % 4 == 0) {
+            console.log("Số nguyên chia hết cho 4");
+        } else if (number % 4 == 1) {
+            console.log("Số nguyên chia 4 dư 1");
+        } else if (number % 4 == 2) {
+            console.log("Số nguyên chia 4 dư 2");
+        } else {
+            console.log("Số nguyên chia 4 dư 3");
+        }
+        //In ra số dư của số nguyên trong phép chia 10: 1 if, 8 elseif, 1 else
+        // Số nguyên có chia hết cho 2 và 3 không??
+        if (number % 2 == 0 && number % 3 == 0) {
+            console.log("Số nguyên chia hết cho cả 2 và 3");
+        } else {
+            // số nguyên không chia hết cho cả 2 và 3
+            if (number % 2 == 0) {
+                console.log("Số nguyên chia hết cho 2");
+            } else if (number % 3 == 0) {
+                console.log("Số nguyên chia hết cho 3");
+            } else {
+                console.log("Số nguyên không chia hết cho 2 và 3");
+            }
+        }
+    </script>
+</body>
+
+</html>

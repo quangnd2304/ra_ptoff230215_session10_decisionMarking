@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+
+<body>
+    <script>
+        // Toán tử toán học: +, -, *, /, %, ++, --
+        let number1 = 10;
+        let number2 = 5;
+        let sum = number1 + number2;
+        console.log("SUM->>>>>>", sum);
+        let sub = number1 - number2;
+        console.log("SUB->>>>>>", sub);
+        let multy = number1 * number2;
+        console.log("MUL->>>>>", multy);
+        let divide = number1 / number2;
+        console.log("DIVIDE->>>", divide);
+        let surplus = number1 % number2;//Lấy số dư trong phép chia
+        console.log("SURPLUS->>>", surplus);
+        //++: tăng 1 đơn vị, --: giảm 1 đơn vị
+        let number3 = number1++;
+        //number1 = 10
+        console.log("NUMBER3->>>", number3);// 5 bạn: 11, 3 bạn: 10
+        //number2 = 5
+        let number4 = ++number2;
+        console.log("NUMBER4->>>", number4);//3 bạn: 6, 1 bạn: 5, 4 bạn: không biết
+        //Toán tử gán: =,+=,-=,*=,/=,%=
+        let number5 = 20;
+        let number6 = 10;
+        // number6 = number6 + number5
+        number6 += number5;//number6 = 30;
+        let number7 = 30;
+        //number7 = number7-number5;
+        number7 -= number5;//number7=10
+        //number7*=number5 --> number7 = number7*number5
+        //number7/=number5 --> number7 = number7/number5
+        //number7%=number5 --> number7 = number7%number5
+        // Toán tử so sánh: ==,===,!=,>=,<=,>,<: Sử dụng trong biểu thức điều kiện
+        //--> kết quả so sánh: true, false
+        let result = 5 < 7;//result=false
+        console.log("RESULT->>>>>", result);
+        let result01 = (5 == "5");//result01=true
+        console.log("RESULT01->>>>", result01);
+        let result02 = (5 === "5");//result02=false
+        console.log("RESULT02->>>", result02);
+        // Toán tử logic: AND (&&), OR(||), NOT(!) --> sử dụng trong biểu thức điều kiện
+        let boolean1 = true && true;//boolean1: true
+        console.log("BOOLEAN1->>>>>", boolean1);
+        let boolean2 = true && false;//boolean2:false
+        console.log("BOOLEAN2->>>>", boolean2);
+        let boolean3 = false && false;//boolean3: false
+        let boolean4 = true || true;//boolean4: true
+        console.log("BOOLEAN4->>>>", boolean4);
+        let boolean5 = true || false;//boolean5: true
+        console.log("BOOLEAN5->>>", boolean5);
+        let boolean6 = false || false;//boolean6: false;
+        console.log("BOOLEAN6->>>>", boolean6);
+        let boolean7 = !true;//boolean7:false
+        // Toán tử 3 ngôi:
+        let result03 = (5 < 7) ? 10 : 20;//5<7-->true ===> result03 = 10
+        let result04 = (5 >= 7) ? 10 : 20;//5>=7-->false ==> result04 = 20
+
+    </script>
+</body>
+
+</html>
